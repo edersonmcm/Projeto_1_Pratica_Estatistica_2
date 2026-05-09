@@ -1,87 +1,17 @@
 [
   {
-    "objectID": "projeto1_pratica2.html#pandemia-e-comportamento-alimentar",
-    "href": "projeto1_pratica2.html#pandemia-e-comportamento-alimentar",
+    "objectID": "projeto1_pratica2.html#pandemia-objetivos-e-hipóteses",
+    "href": "projeto1_pratica2.html#pandemia-objetivos-e-hipóteses",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Pandemia e comportamento alimentar",
-    "text": "Pandemia e comportamento alimentar\n\nA pandemia da COVID-19 provocou alterações relevantes:\n\nnos hábitos alimentares;\nna prática de atividade física;\nno comportamento social;\nna rotina doméstica;\nnos padrões de consumo alimentar.\n\n\nAlém disso, fatores como isolamento social, ansiedade e mudanças econômicas podem ter impactado diretamente indicadores nutricionais."
-  },
-  {
-    "objectID": "projeto1_pratica2.html#objetivo-geral",
-    "href": "projeto1_pratica2.html#objetivo-geral",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Objetivo geral",
-    "text": "Objetivo geral\n\nInvestigar possíveis relações entre:\n\nIMC;\natividade física;\ndelivery;\nfatores sociais;\nhábitos alimentares;\nvariáveis associadas à pandemia.\n\n\nUtilizando:\n\nestatística descritiva;\nvisualização de dados;\ntestes de hipóteses;\nanálise de correlação."
-  },
-  {
-    "objectID": "projeto1_pratica2.html#hipóteses-investigadas",
-    "href": "projeto1_pratica2.html#hipóteses-investigadas",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Hipóteses investigadas",
-    "text": "Hipóteses investigadas\n\nHipótese 1\nExiste diferença significativa no IMC entre diferentes grupos de atividade física.\n\nHipótese 2\nO comportamento relacionado ao delivery sofreu associação com a COVID.\n\nHipótese 3\nVariáveis antropométricas apresentam forte correlação linear."
+    "section": "Pandemia, objetivos e hipóteses",
+    "text": "Pandemia, objetivos e hipóteses\nA pandemia da COVID-19 provocou mudanças relevantes:\n\nhábitos alimentares;\nprática de atividade física;\ncomportamento social;\npadrões de consumo.\n\nObjetivos da análise:\n\ninvestigar relações entre IMC e atividade física;\navaliar associação entre COVID e delivery;\nanalisar correlações entre variáveis antropométricas.\n\nHipóteses investigadas:\n\ndiferenças de IMC entre grupos;\nassociação entre delivery e COVID;\ncorrelação linear entre variáveis corporais."
   },
   {
     "objectID": "projeto1_pratica2.html#características-gerais",
     "href": "projeto1_pratica2.html#características-gerais",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Características gerais",
-    "text": "Características gerais\n\n\n\nResumo geral da base\n\n\nCaracterística\nValor\n\n\n\n\nNúmero de observações\n2310\n\n\nNúmero de variáveis\n28\n\n\nVariáveis quantitativas\n4\n\n\nVariáveis qualitativas\n24"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#variáveis-quantitativas",
-    "href": "projeto1_pratica2.html#variáveis-quantitativas",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Variáveis quantitativas",
-    "text": "Variáveis quantitativas\n\n\nIdade\nAltura\nPeso\nIMC"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#variáveis-qualitativas",
-    "href": "projeto1_pratica2.html#variáveis-qualitativas",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Variáveis qualitativas",
-    "text": "Variáveis qualitativas\n\n\nGênero\nRegião\nDelivery\nCOVID\nEscolaridade\nAtividade física\nHábitos alimentares"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#importância-estatística-da-base",
-    "href": "projeto1_pratica2.html#importância-estatística-da-base",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Importância estatística da base",
-    "text": "Importância estatística da base\n\nA base permite:\n\nanálise de comportamento populacional;\ninvestigação de relações nutricionais;\ncomparação entre grupos;\naplicação de métodos inferenciais.\n\n\nAlém disso, apresenta variáveis quantitativas e qualitativas, permitindo diferentes abordagens estatísticas."
-  },
-  {
-    "objectID": "projeto1_pratica2.html#resumo-estatístico-do-imc",
-    "href": "projeto1_pratica2.html#resumo-estatístico-do-imc",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Resumo estatístico do IMC",
-    "text": "Resumo estatístico do IMC\n\n\n\nMedidas descritivas do IMC\n\n\nMédia\nMediana\nDesvio Padrão\nMínimo\nMáximo\n\n\n\n\n25.34\n24.52\n5.05\n13.65\n49.95"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#distribuição-do-imc",
-    "href": "projeto1_pratica2.html#distribuição-do-imc",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Distribuição do IMC",
-    "text": "Distribuição do IMC"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#interpretação-da-distribuição",
-    "href": "projeto1_pratica2.html#interpretação-da-distribuição",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Interpretação da distribuição",
-    "text": "Interpretação da distribuição\n\nObserva-se:\n\ndispersão relativamente elevada;\npresença de possíveis outliers;\nleve assimetria;\nconcentração em valores intermediários.\n\n\nO comportamento sugere possível violação da normalidade."
-  },
-  {
-    "objectID": "projeto1_pratica2.html#boxplot-do-imc-por-gênero",
-    "href": "projeto1_pratica2.html#boxplot-do-imc-por-gênero",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Boxplot do IMC por gênero",
-    "text": "Boxplot do IMC por gênero"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#distribuição-etária",
-    "href": "projeto1_pratica2.html#distribuição-etária",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Distribuição etária",
-    "text": "Distribuição etária"
+    "text": "Características gerais\n\n\n\n\n\nCaracterística\nValor\n\n\n\n\nObservações\n2310\n\n\nVariáveis\n28\n\n\nQuantitativas\n4\n\n\nQualitativas\n24\n\n\n\n\n\nVariáveis quantitativas:\n\nidade;\naltura;\npeso;\nIMC.\n\nVariáveis qualitativas:\n\ngênero;\nregião;\nCOVID;\ndelivery;\natividade física."
   },
   {
     "objectID": "projeto1_pratica2.html#distribuição-regional",
@@ -91,74 +21,74 @@
     "text": "Distribuição regional"
   },
   {
-    "objectID": "projeto1_pratica2.html#mudança-no-consumo-de-delivery",
-    "href": "projeto1_pratica2.html#mudança-no-consumo-de-delivery",
+    "objectID": "projeto1_pratica2.html#resumo-estatístico-do-imc",
+    "href": "projeto1_pratica2.html#resumo-estatístico-do-imc",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Mudança no consumo de delivery",
-    "text": "Mudança no consumo de delivery"
+    "section": "Resumo estatístico do IMC",
+    "text": "Resumo estatístico do IMC\n\n\n\n\n\nMédia\nMediana\nDesvio Padrão\nMínimo\nMáximo\n\n\n\n\n25.34\n24.52\n5.05\n13.65\n49.95"
+  },
+  {
+    "objectID": "projeto1_pratica2.html#distribuição-do-imc",
+    "href": "projeto1_pratica2.html#distribuição-do-imc",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Distribuição do IMC",
+    "text": "Distribuição do IMC\n\nInterpretação:\n\npresença de dispersão moderada;\npossíveis outliers;\nleve assimetria;\nindícios de não normalidade."
+  },
+  {
+    "objectID": "projeto1_pratica2.html#imc-segundo-gênero",
+    "href": "projeto1_pratica2.html#imc-segundo-gênero",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "IMC segundo gênero",
+    "text": "IMC segundo gênero"
+  },
+  {
+    "objectID": "projeto1_pratica2.html#distribuição-etária",
+    "href": "projeto1_pratica2.html#distribuição-etária",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Distribuição etária",
+    "text": "Distribuição etária"
+  },
+  {
+    "objectID": "projeto1_pratica2.html#mudança-no-delivery",
+    "href": "projeto1_pratica2.html#mudança-no-delivery",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Mudança no delivery",
+    "text": "Mudança no delivery"
   },
   {
     "objectID": "projeto1_pratica2.html#teste-de-shapiro-wilk",
     "href": "projeto1_pratica2.html#teste-de-shapiro-wilk",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Teste de Shapiro-Wilk",
-    "text": "Teste de Shapiro-Wilk\n\nO teste de Shapiro-Wilk verifica a normalidade dos dados.\n\nHipóteses:\n\\[\nH_0:\\text{ os dados seguem distribuição normal}\n\\]\n\\[\nH_1:\\text{ os dados não seguem distribuição normal}\n\\]"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#interpretação-do-teste",
-    "href": "projeto1_pratica2.html#interpretação-do-teste",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Interpretação do teste",
-    "text": "Interpretação do teste\n\nSe:\n\\[\np &lt; 0.05\n\\]\nrejeita-se a hipótese de normalidade.\n\nIsso sugere cautela na utilização de métodos paramétricos clássicos."
+    "text": "Teste de Shapiro-Wilk\nHipóteses:\n\\[\nH_0:\\text{ normalidade}\n\\]\n\\[\nH_1:\\text{ não normalidade}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n0.9585\n0\n\n\n\n\n\nConclusão:\n\nse (p &lt; 0.05), rejeita-se normalidade;\ncautela com métodos paramétricos."
   },
   {
     "objectID": "projeto1_pratica2.html#teste-de-levene",
     "href": "projeto1_pratica2.html#teste-de-levene",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Teste de Levene",
-    "text": "Teste de Levene\n\nAvalia homogeneidade das variâncias.\n\nHipóteses:\n\\[\nH_0:\\sigma_1^2=\\sigma_2^2=\\cdots=\\sigma_k^2\n\\]\n\\[\nH_1:\\text{ pelo menos uma variância difere}\n\\]"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#interpretação-do-teste-de-levene",
-    "href": "projeto1_pratica2.html#interpretação-do-teste-de-levene",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Interpretação do teste de Levene",
-    "text": "Interpretação do teste de Levene\n\nCaso:\n\\[\np &lt; 0.05\n\\]\nhá evidências de heterocedasticidade.\n\nNesse cenário, a ANOVA clássica pode não ser apropriada."
+    "text": "Teste de Levene\nHipóteses:\n\\[\nH_0:\\sigma_1^2=\\sigma_2^2=\\cdots=\\sigma_k^2\n\\]\n\\[\nH_1:\\text{ variâncias diferentes}\n\\]\n\n\n\n\n\ndf1\ndf2\nstatistic\np\n\n\n\n\n3\n2306\n9.91289\n1.7e-06\n\n\n\n\n\nConclusão:\n\nse (p &lt; 0.05), há heterocedasticidade;\nANOVA clássica pode não ser adequada."
   },
   {
     "objectID": "projeto1_pratica2.html#anova-de-welch",
     "href": "projeto1_pratica2.html#anova-de-welch",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "ANOVA de Welch",
-    "text": "ANOVA de Welch\n\nA ANOVA de Welch é robusta à heterocedasticidade.\n\nHipóteses:\n\\[\nH_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\\]\n\\[\nH_1:\\text{ pelo menos uma média difere}\n\\]"
+    "text": "ANOVA de Welch\nHipóteses:\n\\[\nH_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\\]\n\\[\nH_1:\\text{ pelo menos uma média difere}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n5.1528\n0.001556\n\n\n\n\n\nConclusão:\n\ndiferenças significativas indicam associação entre IMC e atividade física."
   },
   {
-    "objectID": "projeto1_pratica2.html#interpretação-da-anova-de-welch",
-    "href": "projeto1_pratica2.html#interpretação-da-anova-de-welch",
+    "objectID": "projeto1_pratica2.html#imc-e-atividade-física",
+    "href": "projeto1_pratica2.html#imc-e-atividade-física",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Interpretação da ANOVA de Welch",
-    "text": "Interpretação da ANOVA de Welch\n\nSe:\n\\[\np &lt; 0.05\n\\]\nexistem diferenças significativas entre pelo menos dois grupos.\n\nIsso sugere associação entre atividade física e IMC."
-  },
-  {
-    "objectID": "projeto1_pratica2.html#boxplot-imc-e-atividade-física",
-    "href": "projeto1_pratica2.html#boxplot-imc-e-atividade-física",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Boxplot — IMC e atividade física",
-    "text": "Boxplot — IMC e atividade física"
+    "section": "IMC e atividade física",
+    "text": "IMC e atividade física"
   },
   {
     "objectID": "projeto1_pratica2.html#teste-qui-quadrado",
     "href": "projeto1_pratica2.html#teste-qui-quadrado",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Teste Qui-Quadrado",
-    "text": "Teste Qui-Quadrado\n\nAvalia associação entre:\n\nCOVID;\nmudança no delivery.\n\n\nHipóteses:\n\\[\nH_0:\\text{ as variáveis são independentes}\n\\]\n\\[\nH_1:\\text{ as variáveis são associadas}\n\\]"
-  },
-  {
-    "objectID": "projeto1_pratica2.html#interpretação-do-qui-quadrado",
-    "href": "projeto1_pratica2.html#interpretação-do-qui-quadrado",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Interpretação do Qui-Quadrado",
-    "text": "Interpretação do Qui-Quadrado\n\nCaso:\n\\[\np &lt; 0.05\n\\]\nhá evidências de associação entre as variáveis.\n\nIsso indicaria possível impacto da pandemia sobre o comportamento alimentar."
+    "text": "Teste Qui-Quadrado\nHipóteses:\n\\[\nH_0:\\text{ independência}\n\\]\n\\[\nH_1:\\text{ associação}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n10.75\n0.013156\n\n\n\n\n\nConclusão:\n\nassociação sugere impacto da pandemia sobre o delivery."
   },
   {
     "objectID": "projeto1_pratica2.html#mapa-de-associação",
@@ -172,55 +102,41 @@
     "href": "projeto1_pratica2.html#correlação-de-pearson",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Correlação de Pearson",
-    "text": "Correlação de Pearson\n\nAvalia associação linear entre variáveis quantitativas.\n\nHipóteses:\n\\[\nH_0:\\rho=0\n\\]\n\\[\nH_1:\\rho\\neq0\n\\]"
+    "text": "Correlação de Pearson\nHipóteses:\n\\[\nH_0:\\rho=0\n\\]\n\\[\nH_1:\\rho\\neq0\n\\]"
   },
   {
     "objectID": "projeto1_pratica2.html#matriz-de-correlação",
     "href": "projeto1_pratica2.html#matriz-de-correlação",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Matriz de correlação",
-    "text": "Matriz de correlação"
+    "text": "Matriz de correlação\n\nInterpretação:\n\nvalores próximos de +1 indicam associação positiva;\nvalores próximos de -1 indicam associação negativa;\nvalores próximos de 0 indicam baixa relação linear."
   },
   {
-    "objectID": "projeto1_pratica2.html#interpretação-da-correlação",
-    "href": "projeto1_pratica2.html#interpretação-da-correlação",
+    "objectID": "projeto1_pratica2.html#peso-versus-imc",
+    "href": "projeto1_pratica2.html#peso-versus-imc",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Interpretação da correlação",
-    "text": "Interpretação da correlação\n\nValores próximos de:\n\n+1 indicam forte correlação positiva;\n-1 indicam forte correlação negativa;\n0 indicam ausência de relação linear."
-  },
-  {
-    "objectID": "projeto1_pratica2.html#dispersão-entre-peso-e-imc",
-    "href": "projeto1_pratica2.html#dispersão-entre-peso-e-imc",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Dispersão entre peso e IMC",
-    "text": "Dispersão entre peso e IMC"
+    "section": "Peso versus IMC",
+    "text": "Peso versus IMC"
   },
   {
     "objectID": "projeto1_pratica2.html#síntese-das-correlações",
     "href": "projeto1_pratica2.html#síntese-das-correlações",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Síntese das correlações",
-    "text": "Síntese das correlações\n\nA matriz de correlação evidenciou:\n\nforte associação entre peso e IMC;\nassociação moderada entre altura e peso;\nbaixa correlação entre idade e variáveis antropométricas.\n\n\nEsses resultados sugerem que:\n\nvariáveis corporais apresentam dependência linear;\nidade possui menor influência direta sobre medidas corporais;\no IMC é fortemente influenciado pelo peso."
+    "text": "Síntese das correlações\nA análise indicou:\n\nforte associação entre peso e IMC;\nassociação moderada entre altura e peso;\nbaixa relação entre idade e variáveis corporais."
   },
   {
     "objectID": "projeto1_pratica2.html#principais-resultados",
     "href": "projeto1_pratica2.html#principais-resultados",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Principais resultados",
-    "text": "Principais resultados\n\nA análise evidenciou:\n\nalterações nos hábitos alimentares;\nassociação entre atividade física e IMC;\nforte correlação entre variáveis antropométricas;\npossíveis impactos comportamentais da pandemia."
+    "text": "Principais resultados\nA análise evidenciou:\n\nalterações comportamentais durante a pandemia;\nassociação entre IMC e atividade física;\nrelação entre COVID e delivery;\nforte correlação entre variáveis antropométricas."
   },
   {
-    "objectID": "projeto1_pratica2.html#conclusão-estatística",
-    "href": "projeto1_pratica2.html#conclusão-estatística",
+    "objectID": "projeto1_pratica2.html#considerações-finais",
+    "href": "projeto1_pratica2.html#considerações-finais",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Conclusão estatística",
-    "text": "Conclusão estatística\n\nA utilização de múltiplas abordagens estatísticas permitiu:\n\ndescrição da amostra;\ninvestigação inferencial;\ninterpretação quantitativa dos dados;\ncomparação entre grupos.\n\n\nOs resultados reforçam a importância da Estatística aplicada em problemas reais de saúde pública."
-  },
-  {
-    "objectID": "projeto1_pratica2.html#limitações-do-estudo",
-    "href": "projeto1_pratica2.html#limitações-do-estudo",
-    "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Limitações do estudo",
-    "text": "Limitações do estudo\n\n\nDados autorreportados;\npossíveis vieses amostrais;\nausência de acompanhamento longitudinal;\nvariáveis qualitativas subjetivas.\n\n\nApesar disso, a base apresenta elevado potencial analítico."
+    "section": "Considerações finais",
+    "text": "Considerações finais\nA utilização de métodos descritivos e inferenciais permitiu:\n\ncaracterização da amostra;\ncomparação entre grupos;\ninvestigação de associações;\ninterpretação quantitativa dos dados.\n\nLimitações:\n\ndados autorreportados;\npossíveis vieses amostrais;\nausência de acompanhamento longitudinal."
   }
 ]

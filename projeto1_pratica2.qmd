@@ -1,6 +1,6 @@
 ---
 title: |
-  **PRÁTICA ESTATÍSTICA II**  
+  **PRÁTICA ESTATÍSTICA II**
 
 subtitle: |
   Base Nutrição — Análise Exploratória e Inferencial
@@ -19,18 +19,26 @@ format:
   revealjs:
     theme: simple
     css: custom.css
+
     slide-number: true
     incremental: false
+
     transition: slide
     background-transition: fade
+
     width: 1280
     height: 720
-    margin: 0.07
-    auto-stretch: false
+
+    margin: 0.04
+
+    auto-stretch: true
+
     embed-resources: true
-    toc: true
-    toc-depth: 2
-    smaller: false
+
+    toc: false
+
+    smaller: true
+
     chalkboard: false
 
     title-slide-attributes:
@@ -61,7 +69,7 @@ library(forcats)
 library(broom)
 
 theme_set(
-  theme_minimal(base_size = 20)
+  theme_minimal(base_size = 18)
 )
 
 base <- read_excel("Nutricao.xlsx") |>
@@ -80,93 +88,40 @@ base <- base |>
 
 # **SUMÁRIO**
 
-::: box-blue
-**1.** Contextualização
-:::
+1. Contextualização
 
-::: box-green
-**2.** Base de Dados
-:::
+2. Base de Dados
 
-::: box-purple
-**3.** Estatística Descritiva
-:::
+3. Estatística Descritiva
 
-::: box-orange
-**4.** Análises Inferenciais
-:::
+4. Análises Inferenciais
 
-::: box-red
-**5.** Correlação e Associação Linear
-:::
+5. Correlação
 
-::: box-yellow
-**6.** Conclusões
-:::
+6. Conclusões
 
 # **1. Contextualização**
 
-## **Pandemia e comportamento alimentar**
+## **Pandemia, objetivos e hipóteses**
 
-<br>
+A pandemia da COVID-19 provocou mudanças relevantes:
 
-A pandemia da COVID-19 provocou alterações relevantes:
-
-- nos hábitos alimentares;
-- na prática de atividade física;
-- no comportamento social;
-- na rotina doméstica;
-- nos padrões de consumo alimentar.
-
-<br>
-
-Além disso, fatores como isolamento social, ansiedade e mudanças econômicas podem ter impactado diretamente indicadores nutricionais.
-
----
-
-## **Objetivo geral**
-
-<br>
-
-Investigar possíveis relações entre:
-
-- IMC;
-- atividade física;
-- delivery;
-- fatores sociais;
 - hábitos alimentares;
-- variáveis associadas à pandemia.
+- prática de atividade física;
+- comportamento social;
+- padrões de consumo.
 
-<br>
+Objetivos da análise:
 
-Utilizando:
+- investigar relações entre IMC e atividade física;
+- avaliar associação entre COVID e delivery;
+- analisar correlações entre variáveis antropométricas.
 
-- estatística descritiva;
-- visualização de dados;
-- testes de hipóteses;
-- análise de correlação.
+Hipóteses investigadas:
 
----
-
-## **Hipóteses investigadas**
-
-<br>
-
-### Hipótese 1
-
-Existe diferença significativa no IMC entre diferentes grupos de atividade física.
-
-<br>
-
-### Hipótese 2
-
-O comportamento relacionado ao delivery sofreu associação com a COVID.
-
-<br>
-
-### Hipótese 3
-
-Variáveis antropométricas apresentam forte correlação linear.
+- diferenças de IMC entre grupos;
+- associação entre delivery e COVID;
+- correlação linear entre variáveis corporais.
 
 # **2. Base de Dados**
 
@@ -177,10 +132,10 @@ Variáveis antropométricas apresentam forte correlação linear.
 
 resumo_base <- tibble(
   Característica = c(
-    "Número de observações",
-    "Número de variáveis",
-    "Variáveis quantitativas",
-    "Variáveis qualitativas"
+    "Observações",
+    "Variáveis",
+    "Quantitativas",
+    "Qualitativas"
   ),
   Valor = c(
     nrow(base),
@@ -198,150 +153,28 @@ resumo_base <- tibble(
 
 kable(
   resumo_base,
-  align = "c",
-  caption = "Resumo geral da base"
+  align = "c"
 ) |>
-  kable_styling(full_width = FALSE)
-```
-
----
-
-## **Variáveis quantitativas**
-
-<br>
-
-- Idade
-- Altura
-- Peso
-- IMC
-
-<br>
-
-## **Variáveis qualitativas**
-
-<br>
-
-- Gênero
-- Região
-- Delivery
-- COVID
-- Escolaridade
-- Atividade física
-- Hábitos alimentares
-
----
-
-## **Importância estatística da base**
-
-<br>
-
-A base permite:
-
-- análise de comportamento populacional;
-- investigação de relações nutricionais;
-- comparação entre grupos;
-- aplicação de métodos inferenciais.
-
-<br>
-
-Além disso, apresenta variáveis quantitativas e qualitativas, permitindo diferentes abordagens estatísticas.
-
-# **3. Estatística Descritiva**
-
-## **Resumo estatístico do IMC**
-
-```{r}
-#| echo: false
-
-base |>
-  summarise(
-    Média = mean(imc, na.rm = TRUE),
-    Mediana = median(imc, na.rm = TRUE),
-    `Desvio Padrão` = sd(imc, na.rm = TRUE),
-    Mínimo = min(imc, na.rm = TRUE),
-    Máximo = max(imc, na.rm = TRUE)
-  ) |>
-  mutate(
-    across(where(is.numeric), round, 2)
-  ) |>
-  kable(
-    align = "c",
-    caption = "Medidas descritivas do IMC"
-  ) |>
-  kable_styling(full_width = FALSE)
-```
-
----
-
-## **Distribuição do IMC**
-
-```{r}
-#| echo: false
-
-base |>
-  ggplot(aes(imc)) +
-  geom_histogram(
-    bins = 30
-  ) +
-  labs(
-    x = "IMC",
-    y = "Frequência",
-    title = "Distribuição do IMC"
+  kable_styling(
+    full_width = FALSE,
+    font_size = 18
   )
 ```
 
----
+Variáveis quantitativas:
 
-## **Interpretação da distribuição**
+- idade;
+- altura;
+- peso;
+- IMC.
 
-<br>
+Variáveis qualitativas:
 
-Observa-se:
-
-- dispersão relativamente elevada;
-- presença de possíveis outliers;
-- leve assimetria;
-- concentração em valores intermediários.
-
-<br>
-
-O comportamento sugere possível violação da normalidade.
-
----
-
-## **Boxplot do IMC por gênero**
-
-```{r}
-#| echo: false
-
-base |>
-  ggplot(aes(genero, imc)) +
-  geom_boxplot() +
-  labs(
-    x = "Gênero",
-    y = "IMC",
-    title = "IMC segundo gênero"
-  )
-```
-
----
-
-## **Distribuição etária**
-
-```{r}
-#| echo: false
-
-base |>
-  ggplot(aes(idade)) +
-  geom_histogram(
-    bins = 25
-  ) +
-  labs(
-    x = "Idade",
-    y = "Frequência",
-    title = "Distribuição das idades"
-  )
-```
+- gênero;
+- região;
+- COVID;
+- delivery;
+- atividade física.
 
 ---
 
@@ -367,9 +200,98 @@ base |>
   )
 ```
 
+# **3. Estatística Descritiva**
+
+## **Resumo estatístico do IMC**
+
+```{r}
+#| echo: false
+
+base |>
+  summarise(
+    Média = mean(imc, na.rm = TRUE),
+    Mediana = median(imc, na.rm = TRUE),
+    `Desvio Padrão` = sd(imc, na.rm = TRUE),
+    Mínimo = min(imc, na.rm = TRUE),
+    Máximo = max(imc, na.rm = TRUE)
+  ) |>
+  mutate(
+    across(where(is.numeric), round, 2)
+  ) |>
+  kable(
+    align = "c"
+  ) |>
+  kable_styling(
+    full_width = FALSE,
+    font_size = 18
+  )
+```
+
 ---
 
-## **Mudança no consumo de delivery**
+## **Distribuição do IMC**
+
+```{r}
+#| echo: false
+
+base |>
+  ggplot(aes(imc)) +
+  geom_histogram(
+    bins = 30
+  ) +
+  labs(
+    x = "IMC",
+    y = "Frequência",
+    title = "IMC"
+  )
+```
+
+Interpretação:
+
+- presença de dispersão moderada;
+- possíveis outliers;
+- leve assimetria;
+- indícios de não normalidade.
+
+---
+
+## **IMC segundo gênero**
+
+```{r}
+#| echo: false
+
+base |>
+  ggplot(aes(genero, imc)) +
+  geom_boxplot() +
+  labs(
+    x = "Gênero",
+    y = "IMC",
+    title = "IMC por gênero"
+  )
+```
+
+---
+
+## **Distribuição etária**
+
+```{r}
+#| echo: false
+
+base |>
+  ggplot(aes(idade)) +
+  geom_histogram(
+    bins = 25
+  ) +
+  labs(
+    x = "Idade",
+    y = "Frequência",
+    title = "Idades"
+  )
+```
+
+---
+
+## **Mudança no delivery**
 
 ```{r}
 #| echo: false
@@ -381,7 +303,7 @@ base |>
   labs(
     x = "Categoria",
     y = "Quantidade",
-    title = "Mudança no consumo de delivery"
+    title = "Delivery"
   )
 ```
 
@@ -389,23 +311,15 @@ base |>
 
 ## **Teste de Shapiro-Wilk**
 
-<br>
-
-O teste de Shapiro-Wilk verifica a normalidade dos dados.
-
-<br>
-
 Hipóteses:
 
 $$
-H_0:\text{ os dados seguem distribuição normal}
+H_0:\text{ normalidade}
 $$
 
 $$
-H_1:\text{ os dados não seguem distribuição normal}
+H_1:\text{ não normalidade}
 $$
-
----
 
 ```{r}
 #| echo: false
@@ -441,39 +355,22 @@ resultado_shapiro <- tibble(
 
 kable(
   resultado_shapiro,
-  align = "c",
-  caption = "Resultado do teste de Shapiro-Wilk"
+  align = "c"
 ) |>
-  kable_styling(full_width = FALSE)
+  kable_styling(
+    full_width = FALSE,
+    font_size = 18
+  )
 ```
 
----
+Conclusão:
 
-## **Interpretação do teste**
-
-<br>
-
-Se:
-
-$$
-p < 0.05
-$$
-
-rejeita-se a hipótese de normalidade.
-
-<br>
-
-Isso sugere cautela na utilização de métodos paramétricos clássicos.
+- se \(p < 0.05\), rejeita-se normalidade;
+- cautela com métodos paramétricos.
 
 ---
 
 ## **Teste de Levene**
-
-<br>
-
-Avalia homogeneidade das variâncias.
-
-<br>
 
 Hipóteses:
 
@@ -482,10 +379,8 @@ H_0:\sigma_1^2=\sigma_2^2=\cdots=\sigma_k^2
 $$
 
 $$
-H_1:\text{ pelo menos uma variância difere}
+H_1:\text{ variâncias diferentes}
 $$
-
----
 
 ```{r}
 #| echo: false
@@ -497,39 +392,22 @@ levene <- levene_test(
 
 kable(
   levene,
-  align = "c",
-  caption = "Teste de homogeneidade de variâncias"
+  align = "c"
 ) |>
-  kable_styling(full_width = FALSE)
+  kable_styling(
+    full_width = FALSE,
+    font_size = 18
+  )
 ```
 
----
+Conclusão:
 
-## **Interpretação do teste de Levene**
-
-<br>
-
-Caso:
-
-$$
-p < 0.05
-$$
-
-há evidências de heterocedasticidade.
-
-<br>
-
-Nesse cenário, a ANOVA clássica pode não ser apropriada.
+- se \(p < 0.05\), há heterocedasticidade;
+- ANOVA clássica pode não ser adequada.
 
 ---
 
 ## **ANOVA de Welch**
-
-<br>
-
-A ANOVA de Welch é robusta à heterocedasticidade.
-
-<br>
 
 Hipóteses:
 
@@ -540,8 +418,6 @@ $$
 $$
 H_1:\text{ pelo menos uma média difere}
 $$
-
----
 
 ```{r}
 #| echo: false
@@ -561,33 +437,21 @@ resultado_welch <- tibble(
 
 kable(
   resultado_welch,
-  align = "c",
-  caption = "Resultado da ANOVA de Welch"
+  align = "c"
 ) |>
-  kable_styling(full_width = FALSE)
+  kable_styling(
+    full_width = FALSE,
+    font_size = 18
+  )
 ```
 
----
+Conclusão:
 
-## **Interpretação da ANOVA de Welch**
-
-<br>
-
-Se:
-
-$$
-p < 0.05
-$$
-
-existem diferenças significativas entre pelo menos dois grupos.
-
-<br>
-
-Isso sugere associação entre atividade física e IMC.
+- diferenças significativas indicam associação entre IMC e atividade física.
 
 ---
 
-## **Boxplot — IMC e atividade física**
+## **IMC e atividade física**
 
 ```{r}
 #| echo: false
@@ -604,7 +468,7 @@ base |>
   labs(
     x = "Atividade física",
     y = "IMC",
-    title = "IMC segundo atividade física"
+    title = "IMC e atividade física"
   )
 ```
 
@@ -612,26 +476,15 @@ base |>
 
 ## **Teste Qui-Quadrado**
 
-<br>
-
-Avalia associação entre:
-
-- COVID;
-- mudança no delivery.
-
-<br>
-
 Hipóteses:
 
 $$
-H_0:\text{ as variáveis são independentes}
+H_0:\text{ independência}
 $$
 
 $$
-H_1:\text{ as variáveis são associadas}
+H_1:\text{ associação}
 $$
-
----
 
 ```{r}
 #| echo: false
@@ -652,29 +505,17 @@ resultado_qui <- tibble(
 
 kable(
   resultado_qui,
-  align = "c",
-  caption = "Resultado do teste Qui-Quadrado"
+  align = "c"
 ) |>
-  kable_styling(full_width = FALSE)
+  kable_styling(
+    full_width = FALSE,
+    font_size = 18
+  )
 ```
 
----
+Conclusão:
 
-## **Interpretação do Qui-Quadrado**
-
-<br>
-
-Caso:
-
-$$
-p < 0.05
-$$
-
-há evidências de associação entre as variáveis.
-
-<br>
-
-Isso indicaria possível impacto da pandemia sobre o comportamento alimentar.
+- associação sugere impacto da pandemia sobre o delivery.
 
 ---
 
@@ -697,7 +538,7 @@ prop.table(cont_tab, 1) |>
     aes(
       label = round(Freq, 2)
     ),
-    size = 8
+    size = 6
   ) +
   labs(
     x = "Delivery",
@@ -706,15 +547,9 @@ prop.table(cont_tab, 1) |>
   )
 ```
 
-# **5. Correlação e Associação Linear**
+# **5. Correlação**
 
 ## **Correlação de Pearson**
-
-<br>
-
-Avalia associação linear entre variáveis quantitativas.
-
-<br>
 
 Hipóteses:
 
@@ -748,21 +583,15 @@ corrplot(
 )
 ```
 
----
+Interpretação:
 
-## **Interpretação da correlação**
-
-<br>
-
-Valores próximos de:
-
-- +1 indicam forte correlação positiva;
-- -1 indicam forte correlação negativa;
-- 0 indicam ausência de relação linear.
+- valores próximos de +1 indicam associação positiva;
+- valores próximos de -1 indicam associação negativa;
+- valores próximos de 0 indicam baixa relação linear.
 
 ---
 
-## **Dispersão entre peso e IMC**
+## **Peso versus IMC**
 
 ```{r}
 #| echo: false
@@ -785,110 +614,53 @@ base |>
 
 ## **Síntese das correlações**
 
-<br>
-
-A matriz de correlação evidenciou:
+A análise indicou:
 
 - forte associação entre peso e IMC;
 - associação moderada entre altura e peso;
-- baixa correlação entre idade e variáveis antropométricas.
-
-<br>
-
-Esses resultados sugerem que:
-
-- variáveis corporais apresentam dependência linear;
-- idade possui menor influência direta sobre medidas corporais;
-- o IMC é fortemente influenciado pelo peso.
+- baixa relação entre idade e variáveis corporais.
 
 # **6. Conclusões**
 
 ## **Principais resultados**
 
-<br>
-
 A análise evidenciou:
 
-- alterações nos hábitos alimentares;
-- associação entre atividade física e IMC;
-- forte correlação entre variáveis antropométricas;
-- possíveis impactos comportamentais da pandemia.
+- alterações comportamentais durante a pandemia;
+- associação entre IMC e atividade física;
+- relação entre COVID e delivery;
+- forte correlação entre variáveis antropométricas.
 
 ---
 
-## **Conclusão estatística**
+## **Considerações finais**
 
-<br>
+A utilização de métodos descritivos e inferenciais permitiu:
 
-A utilização de múltiplas abordagens estatísticas permitiu:
+- caracterização da amostra;
+- comparação entre grupos;
+- investigação de associações;
+- interpretação quantitativa dos dados.
 
-- descrição da amostra;
-- investigação inferencial;
-- interpretação quantitativa dos dados;
-- comparação entre grupos.
+Limitações:
 
-<br>
-
-Os resultados reforçam a importância da Estatística aplicada em problemas reais de saúde pública.
-
----
-
-## **Limitações do estudo**
-
-<br>
-
-- Dados autorreportados;
+- dados autorreportados;
 - possíveis vieses amostrais;
-- ausência de acompanhamento longitudinal;
-- variáveis qualitativas subjetivas.
-
-<br>
-
-Apesar disso, a base apresenta elevado potencial analítico.
-
----
-
-# **Reprodutibilidade**
-
-<br>
-
-O projeto foi desenvolvido utilizando:
-
-- Quarto (`.qmd`);
-- linguagem R;
-- RevealJS;
-- Git/GitHub.
-
-<br>
-
-A utilização dessas ferramentas permite:
-
-- reprodutibilidade;
-- versionamento;
-- compartilhamento científico;
-- padronização analítica.
+- ausência de acompanhamento longitudinal.
 
 # **Referências**
 
-<br>
+Agresti, A. (2019)  
+*An Introduction to Categorical Data Analysis.*
 
-**Agresti, A. (2019)**  
-An Introduction to Categorical Data Analysis.
+James, G. et al. (2021)  
+*An Introduction to Statistical Learning.*
 
-<br>
+Johnson, R. A., & Wichern, D. W. (2007)  
+*Applied Multivariate Statistical Analysis.*
 
-**James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021)**  
-An Introduction to Statistical Learning.
-
-<br>
-
-**Johnson, R. A., & Wichern, D. W. (2007)**  
-Applied Multivariate Statistical Analysis.
-
-<br>
-
-**Montgomery, D. C. (2019)**  
-Design and Analysis of Experiments.
+Montgomery, D. C. (2019)  
+*Design and Analysis of Experiments.*
 
 # **FIM**
 {data-background-image="Capa.png" style="text-align:center"}
