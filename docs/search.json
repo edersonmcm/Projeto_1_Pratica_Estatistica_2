@@ -35,6 +35,13 @@
     "text": "Distribuição do IMC\n\nInterpretação:\n\npresença de dispersão moderada;\npossíveis outliers;\nleve assimetria;\nindícios de não normalidade."
   },
   {
+    "objectID": "projeto1_pratica2.html#qq-plot-do-imc",
+    "href": "projeto1_pratica2.html#qq-plot-do-imc",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "QQ-Plot do IMC",
+    "text": "QQ-Plot do IMC\n\nInterpretação:\n\ndesvios da reta indicam não aderência à normalidade;\npresença de assimetria ou caudas discrepantes."
+  },
+  {
     "objectID": "projeto1_pratica2.html#imc-segundo-gênero",
     "href": "projeto1_pratica2.html#imc-segundo-gênero",
     "title": "PRÁTICA ESTATÍSTICA II",
@@ -60,7 +67,7 @@
     "href": "projeto1_pratica2.html#teste-de-shapiro-wilk",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Teste de Shapiro-Wilk",
-    "text": "Teste de Shapiro-Wilk\nHipóteses:\n\\[\nH_0:\\text{ normalidade}\n\\]\n\\[\nH_1:\\text{ não normalidade}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n0.9585\n0\n\n\n\n\n\nConclusão:\n\nse (p &lt; 0.05), rejeita-se normalidade;\ncautela com métodos paramétricos."
+    "text": "Teste de Shapiro-Wilk\nHipóteses:\n\\[\nH_0:\\text{ normalidade}\n\\]\n\\[\nH_1:\\text{ não normalidade}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n0.9585\n0\n\n\n\n\n\nConclusão:\n\nrejeição da hipótese de normalidade;\ndistribuição não aderente ao modelo normal;\nnecessidade de cautela com métodos paramétricos."
   },
   {
     "objectID": "projeto1_pratica2.html#teste-de-levene",
@@ -74,7 +81,7 @@
     "href": "projeto1_pratica2.html#anova-de-welch",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "ANOVA de Welch",
-    "text": "ANOVA de Welch\nHipóteses:\n\\[\nH_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\\]\n\\[\nH_1:\\text{ pelo menos uma média difere}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n5.1528\n0.001556\n\n\n\n\n\nConclusão:\n\ndiferenças significativas indicam associação entre IMC e atividade física."
+    "text": "ANOVA de Welch\nComo houve indícios de heterocedasticidade, optou-se pela ANOVA de Welch, que é robusta à violação da homogeneidade das variâncias.\nHipóteses:\n\\[\nH_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\\]\n\\[\nH_1:\\text{ pelo menos uma média difere}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n5.1528\n0.001556\n\n\n\n\n\nConclusão:\n\ndiferenças significativas indicam associação entre IMC e atividade física."
   },
   {
     "objectID": "projeto1_pratica2.html#imc-e-atividade-física",
@@ -88,7 +95,7 @@
     "href": "projeto1_pratica2.html#teste-qui-quadrado",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Teste Qui-Quadrado",
-    "text": "Teste Qui-Quadrado\nHipóteses:\n\\[\nH_0:\\text{ independência}\n\\]\n\\[\nH_1:\\text{ associação}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n10.75\n0.013156\n\n\n\n\n\nConclusão:\n\nassociação sugere impacto da pandemia sobre o delivery."
+    "text": "Teste Qui-Quadrado\nO teste Qui-Quadrado avalia associação entre variáveis qualitativas.\nHipóteses:\n\\[\nH_0:\\text{ independência}\n\\]\n\\[\nH_1:\\text{ associação}\n\\]\n\n\n\n\n\nEstatística\np-valor\n\n\n\n\n10.75\n0.013156\n\n\n\n\n\nConclusão:\n\nassociação sugere impacto da pandemia sobre o delivery."
   },
   {
     "objectID": "projeto1_pratica2.html#mapa-de-associação",
@@ -98,11 +105,11 @@
     "text": "Mapa de associação"
   },
   {
-    "objectID": "projeto1_pratica2.html#correlação-de-pearson",
-    "href": "projeto1_pratica2.html#correlação-de-pearson",
+    "objectID": "projeto1_pratica2.html#correlação-linear-de-pearson",
+    "href": "projeto1_pratica2.html#correlação-linear-de-pearson",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Correlação de Pearson",
-    "text": "Correlação de Pearson\nHipóteses:\n\\[\nH_0:\\rho=0\n\\]\n\\[\nH_1:\\rho\\neq0\n\\]"
+    "section": "Correlação linear de Pearson",
+    "text": "Correlação linear de Pearson\nO coeficiente de Pearson mede intensidade e direção da associação linear.\nHipóteses:\n\\[\nH_0:\\rho=0\n\\]\n\\[\nH_1:\\rho\\neq0\n\\]"
   },
   {
     "objectID": "projeto1_pratica2.html#matriz-de-correlação",

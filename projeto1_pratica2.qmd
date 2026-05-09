@@ -1,53 +1,35 @@
 ---
 title: |
   **PRÁTICA ESTATÍSTICA II**
-
 subtitle: |
   Base Nutrição — Análise Exploratória e Inferencial
-
 author: |
   Ederson Macedo de Carvalho Moraes
-
 date: today
 date-format: "DD/MM/YYYY"
-
 institute: "Universidade Federal Fluminense"
-
 lang: pt-BR
-
 format:
   revealjs:
     theme: simple
     css: custom.css
-
     slide-number: true
     incremental: false
-
     transition: slide
     background-transition: fade
-
     width: 1280
     height: 720
-
     margin: 0.04
-
     auto-stretch: true
-
     embed-resources: true
-
     toc: false
-
     smaller: true
-
     chalkboard: false
-
     title-slide-attributes:
       data-background-image: "Capa.png"
       data-background-size: cover
-
 editor_options:
   chunk_output_type: inline
-
 execute:
   warning: false
   message: false
@@ -242,7 +224,7 @@ base |>
   labs(
     x = "IMC",
     y = "Frequência",
-    title = "IMC"
+    title = "Distribuição do IMC"
   )
 ```
 
@@ -252,6 +234,27 @@ Interpretação:
 - possíveis outliers;
 - leve assimetria;
 - indícios de não normalidade.
+
+---
+
+## **QQ-Plot do IMC**
+
+```{r}
+#| echo: false
+
+base |>
+  ggplot(aes(sample = imc)) +
+  stat_qq() +
+  stat_qq_line() +
+  labs(
+    title = "QQ-Plot do IMC"
+  )
+```
+
+Interpretação:
+
+- desvios da reta indicam não aderência à normalidade;
+- presença de assimetria ou caudas discrepantes.
 
 ---
 
@@ -285,7 +288,7 @@ base |>
   labs(
     x = "Idade",
     y = "Frequência",
-    title = "Idades"
+    title = "Distribuição das idades"
   )
 ```
 
@@ -303,7 +306,7 @@ base |>
   labs(
     x = "Categoria",
     y = "Quantidade",
-    title = "Delivery"
+    title = "Mudança no delivery"
   )
 ```
 
@@ -365,8 +368,9 @@ kable(
 
 Conclusão:
 
-- se \(p < 0.05\), rejeita-se normalidade;
-- cautela com métodos paramétricos.
+- rejeição da hipótese de normalidade;
+- distribuição não aderente ao modelo normal;
+- necessidade de cautela com métodos paramétricos.
 
 ---
 
@@ -408,6 +412,8 @@ Conclusão:
 ---
 
 ## **ANOVA de Welch**
+
+Como houve indícios de heterocedasticidade, optou-se pela ANOVA de Welch, que é robusta à violação da homogeneidade das variâncias.
 
 Hipóteses:
 
@@ -475,6 +481,8 @@ base |>
 ---
 
 ## **Teste Qui-Quadrado**
+
+O teste Qui-Quadrado avalia associação entre variáveis qualitativas.
 
 Hipóteses:
 
@@ -549,7 +557,9 @@ prop.table(cont_tab, 1) |>
 
 # **5. Correlação**
 
-## **Correlação de Pearson**
+## **Correlação linear de Pearson**
+
+O coeficiente de Pearson mede intensidade e direção da associação linear.
 
 Hipóteses:
 
@@ -663,4 +673,3 @@ Montgomery, D. C. (2019)
 *Design and Analysis of Experiments.*
 
 # **FIM**
-{data-background-image="Capa.png" style="text-align:center"}
