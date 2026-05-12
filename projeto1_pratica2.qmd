@@ -209,6 +209,8 @@ base |>
   )
 ```
 
+![](imc.jpg){width=70% fig-align="center"}
+
 ---
 
 ## **Distribuição do IMC**

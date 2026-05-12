@@ -145,5 +145,320 @@
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "Considerações finais",
     "text": "Considerações finais\nA utilização de métodos descritivos e inferenciais permitiu:\n\ncaracterização da amostra;\ncomparação entre grupos;\ninvestigação de associações;\ninterpretação quantitativa dos dados.\n\nLimitações:\n\ndados autorreportados;\npossíveis vieses amostrais;\nausência de acompanhamento longitudinal."
+  },
+  {
+    "objectID": "pratica_2_ederson.html",
+    "href": "pratica_2_ederson.html",
+    "title": "Prática Estatística II",
+    "section": "",
+    "text": "Este material serve como guia de apoio para apresentação do trabalho de Prática Estatística II.\nO objetivo não é apenas decorar resultados, mas entender:\n\no que cada método estatístico faz;\npor que ele foi utilizado;\ncomo interpretar os resultados;\nquais conclusões podem ou não ser feitas."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#o-que-é",
+    "href": "pratica_2_ederson.html#o-que-é",
+    "title": "Prática Estatística II",
+    "section": "O que é?",
+    "text": "O que é?\nA média é uma medida de tendência central.\nRepresenta o “centro” dos dados."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#fórmula",
+    "href": "pratica_2_ederson.html#fórmula",
+    "title": "Prática Estatística II",
+    "section": "Fórmula",
+    "text": "Fórmula\n\\[\n\\bar{x} = \\frac{\\sum x_i}{n}\n\\]"
+  },
+  {
+    "objectID": "pratica_2_ederson.html#interpretação",
+    "href": "pratica_2_ederson.html#interpretação",
+    "title": "Prática Estatística II",
+    "section": "Interpretação",
+    "text": "Interpretação\n\nMédia alta\nPode indicar:\n\nmaiores valores de IMC;\nmaior concentração dos dados em regiões superiores.\n\n\n\nMédia baixa\nPode indicar:\n\nmenores valores médios;\ndistribuição deslocada para baixo."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#cuidados",
+    "href": "pratica_2_ederson.html#cuidados",
+    "title": "Prática Estatística II",
+    "section": "Cuidados",
+    "text": "Cuidados\nA média é sensível a outliers.\nExemplo:\nUma pessoa com IMC extremamente alto pode puxar a média para cima.\nPor isso:\n\nmédia sozinha não basta;\né importante analisar mediana e dispersão."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#o-que-é-1",
+    "href": "pratica_2_ederson.html#o-que-é-1",
+    "title": "Prática Estatística II",
+    "section": "O que é?",
+    "text": "O que é?\nValor central da distribuição.\nDivide os dados ao meio."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#interpretação-1",
+    "href": "pratica_2_ederson.html#interpretação-1",
+    "title": "Prática Estatística II",
+    "section": "Interpretação",
+    "text": "Interpretação\n\nMédia próxima da mediana\nSugere distribuição mais simétrica.\n\n\nMédia muito diferente da mediana\nPode indicar:\n\nassimetria;\npresença de outliers;\ndistribuição não normal."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#o-que-é-2",
+    "href": "pratica_2_ederson.html#o-que-é-2",
+    "title": "Prática Estatística II",
+    "section": "O que é?",
+    "text": "O que é?\nMede a dispersão dos dados.\nIndica o quanto os valores variam em torno da média."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#fórmula-1",
+    "href": "pratica_2_ederson.html#fórmula-1",
+    "title": "Prática Estatística II",
+    "section": "Fórmula",
+    "text": "Fórmula\n\\[\ns = \\sqrt{\\frac{\\sum (x_i - \\bar{x})^2}{n-1}}\n\\]"
+  },
+  {
+    "objectID": "pratica_2_ederson.html#interpretação-2",
+    "href": "pratica_2_ederson.html#interpretação-2",
+    "title": "Prática Estatística II",
+    "section": "Interpretação",
+    "text": "Interpretação\n\nDesvio padrão pequeno\nDados mais concentrados.\nMenor variabilidade.\n\n\nDesvio padrão grande\nDados mais espalhados.\nMaior variabilidade."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#homogeneidade",
+    "href": "pratica_2_ederson.html#homogeneidade",
+    "title": "Prática Estatística II",
+    "section": "Homogeneidade",
+    "text": "Homogeneidade\nRelaciona-se à variabilidade.\nQuando grupos possuem dispersões parecidas.\nExemplo:\n\nvariâncias semelhantes;\ncomportamento semelhante das dispersões."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#associação",
+    "href": "pratica_2_ederson.html#associação",
+    "title": "Prática Estatística II",
+    "section": "Associação",
+    "text": "Associação\nRelaciona-se à dependência estatística.\nExemplo:\n\nCOVID associado ao delivery;\npeso associado ao IMC."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#resumo",
+    "href": "pratica_2_ederson.html#resumo",
+    "title": "Prática Estatística II",
+    "section": "Resumo",
+    "text": "Resumo\nHomogeneidade: - compara dispersões.\nAssociação: - compara relação entre variáveis.\nSão conceitos completamente diferentes."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#exemplo",
+    "href": "pratica_2_ederson.html#exemplo",
+    "title": "Prática Estatística II",
+    "section": "Exemplo",
+    "text": "Exemplo\nComparar IMC entre grupos de atividade física.\nSe todos os grupos tiverem variâncias parecidas:\nhá homocedasticidade."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#interpretação-prática",
+    "href": "pratica_2_ederson.html#interpretação-prática",
+    "title": "Prática Estatística II",
+    "section": "Interpretação prática",
+    "text": "Interpretação prática\nSe um grupo apresenta:\n\nIMCs muito concentrados;\n\ne outro:\n\nIMCs muito espalhados;\n\nentão há heterocedasticidade."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando",
+    "href": "pratica_2_ederson.html#quando",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &lt; \\alpha\n\\]\nRejeitamos:\n\\[\nH_0\n\\]\nOu seja:\nhá evidências estatísticas contra a hipótese nula."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-1",
+    "href": "pratica_2_ederson.html#quando-1",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &gt; \\alpha\n\\]\nNÃO rejeitamos:\n\\[\nH_0\n\\]\nImportante:\nisso NÃO prova que (H_0) é verdadeira.\nApenas significa:\nnão houve evidência suficiente para rejeitá-la."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#o-que-é-3",
+    "href": "pratica_2_ederson.html#o-que-é-3",
+    "title": "Prática Estatística II",
+    "section": "O que é ()?",
+    "text": "O que é ()?\nÉ o nível de significância.\nRepresenta o risco tolerado de erro tipo I.\nNormalmente:\n\\[\n\\alpha = 0.05\n\\]"
+  },
+  {
+    "objectID": "pratica_2_ederson.html#o-que-é-4",
+    "href": "pratica_2_ederson.html#o-que-é-4",
+    "title": "Prática Estatística II",
+    "section": "O que é?",
+    "text": "O que é?\nRejeitar (H_0) quando ela é verdadeira.\nFalso positivo."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#hipóteses",
+    "href": "pratica_2_ederson.html#hipóteses",
+    "title": "Prática Estatística II",
+    "section": "Hipóteses",
+    "text": "Hipóteses\n\\[\nH_0: \\text{os dados seguem distribuição normal}\n\\]\n\\[\nH_1: \\text{os dados não seguem distribuição normal}\n\\]"
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-2",
+    "href": "pratica_2_ederson.html#quando-2",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &lt; 0.05\n\\]\nConclusão:\n\nrejeita normalidade;\nindícios de distribuição não normal."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-3",
+    "href": "pratica_2_ederson.html#quando-3",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &gt; 0.05\n\\]\nConclusão:\n\nnão há evidência contra normalidade."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#hipóteses-1",
+    "href": "pratica_2_ederson.html#hipóteses-1",
+    "title": "Prática Estatística II",
+    "section": "Hipóteses",
+    "text": "Hipóteses\n\\[\nH_0:\\sigma_1^2=\\sigma_2^2=\\cdots=\\sigma_k^2\n\\]\n\\[\nH_1:\\text{pelo menos uma variância difere}\n\\]"
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-4",
+    "href": "pratica_2_ederson.html#quando-4",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &lt; 0.05\n\\]\nConclusão:\n\nhá heterocedasticidade;\nvariâncias diferentes."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-5",
+    "href": "pratica_2_ederson.html#quando-5",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &gt; 0.05\n\\]\nConclusão:\n\nnão há evidências de heterocedasticidade."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#objetivo",
+    "href": "pratica_2_ederson.html#objetivo",
+    "title": "Prática Estatística II",
+    "section": "Objetivo",
+    "text": "Objetivo\nVerificar se:\npelo menos uma média difere das outras."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-6",
+    "href": "pratica_2_ederson.html#quando-6",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &lt; 0.05\n\\]\nConclusão:\n\nexistem diferenças estatísticas entre grupos."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-7",
+    "href": "pratica_2_ederson.html#quando-7",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &gt; 0.05\n\\]\nConclusão:\n\nnão há evidência suficiente de diferença."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#vantagem",
+    "href": "pratica_2_ederson.html#vantagem",
+    "title": "Prática Estatística II",
+    "section": "Vantagem",
+    "text": "Vantagem\nWelch é mais robusta quando:\n\nvariâncias são diferentes."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#exemplo-do-trabalho",
+    "href": "pratica_2_ederson.html#exemplo-do-trabalho",
+    "title": "Prática Estatística II",
+    "section": "Exemplo do trabalho",
+    "text": "Exemplo do trabalho\nCOVID vs Delivery."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-8",
+    "href": "pratica_2_ederson.html#quando-8",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &lt; 0.05\n\\]\nConclusão:\n\nexiste associação estatística."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#quando-9",
+    "href": "pratica_2_ederson.html#quando-9",
+    "title": "Prática Estatística II",
+    "section": "Quando:",
+    "text": "Quando:\n\\[\np &gt; 0.05\n\\]\nConclusão:\n\nnão há evidência de associação."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#coeficiente",
+    "href": "pratica_2_ederson.html#coeficiente",
+    "title": "Prática Estatística II",
+    "section": "Coeficiente",
+    "text": "Coeficiente\n\\[\n-1 \\leq \\rho \\leq 1\n\\]"
+  },
+  {
+    "objectID": "pratica_2_ederson.html#próximo-de-1",
+    "href": "pratica_2_ederson.html#próximo-de-1",
+    "title": "Prática Estatística II",
+    "section": "Próximo de +1",
+    "text": "Próximo de +1\nForte associação positiva.\nExemplo:\npeso aumenta e IMC aumenta."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#próximo-de--1",
+    "href": "pratica_2_ederson.html#próximo-de--1",
+    "title": "Prática Estatística II",
+    "section": "Próximo de -1",
+    "text": "Próximo de -1\nForte associação negativa.\nExemplo:\numa variável sobe e outra desce."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#próximo-de-0",
+    "href": "pratica_2_ederson.html#próximo-de-0",
+    "title": "Prática Estatística II",
+    "section": "Próximo de 0",
+    "text": "Próximo de 0\nBaixa associação linear."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#exemplo-1",
+    "href": "pratica_2_ederson.html#exemplo-1",
+    "title": "Prática Estatística II",
+    "section": "Exemplo",
+    "text": "Exemplo\nDuas variáveis podem:\n\ncrescer juntas;\nmas serem influenciadas por outro fator."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#caixa-muito-alta",
+    "href": "pratica_2_ederson.html#caixa-muito-alta",
+    "title": "Prática Estatística II",
+    "section": "Caixa muito alta",
+    "text": "Caixa muito alta\nMaior dispersão."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#caixa-pequena",
+    "href": "pratica_2_ederson.html#caixa-pequena",
+    "title": "Prática Estatística II",
+    "section": "Caixa pequena",
+    "text": "Caixa pequena\nMenor dispersão."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#pontos-isolados",
+    "href": "pratica_2_ederson.html#pontos-isolados",
+    "title": "Prática Estatística II",
+    "section": "Pontos isolados",
+    "text": "Pontos isolados\nPossíveis outliers."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#simétrico",
+    "href": "pratica_2_ederson.html#simétrico",
+    "title": "Prática Estatística II",
+    "section": "Simétrico",
+    "text": "Simétrico\nIndício de normalidade."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#assimétrico",
+    "href": "pratica_2_ederson.html#assimétrico",
+    "title": "Prática Estatística II",
+    "section": "Assimétrico",
+    "text": "Assimétrico\nIndício de não normalidade."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#caudas-longas",
+    "href": "pratica_2_ederson.html#caudas-longas",
+    "title": "Prática Estatística II",
+    "section": "Caudas longas",
+    "text": "Caudas longas\nPossíveis outliers."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#dados-autorreportados",
+    "href": "pratica_2_ederson.html#dados-autorreportados",
+    "title": "Prática Estatística II",
+    "section": "Dados autorreportados",
+    "text": "Dados autorreportados\nAs pessoas podem:\n\nerrar informações;\nomitir dados;\nestimar incorretamente."
+  },
+  {
+    "objectID": "pratica_2_ederson.html#ausência-longitudinal",
+    "href": "pratica_2_ederson.html#ausência-longitudinal",
+    "title": "Prática Estatística II",
+    "section": "Ausência longitudinal",
+    "text": "Ausência longitudinal\nOs dados representam:\num recorte no tempo.\nNão acompanham evolução individual."
   }
 ]

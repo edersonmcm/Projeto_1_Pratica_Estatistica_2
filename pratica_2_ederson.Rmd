@@ -1,0 +1,805 @@
+---
+title: "Prática Estatística II"
+output:
+  pdf_document:
+    latex_engine: xelatex
+fontsize: 11pt
+geometry: margin=1in
+---
+# Introdução
+
+Este material serve como guia de apoio para apresentação do trabalho de Prática Estatística II.
+
+O objetivo não é apenas decorar resultados, mas entender:
+
+- o que cada método estatístico faz;
+- por que ele foi utilizado;
+- como interpretar os resultados;
+- quais conclusões podem ou não ser feitas.
+
+---
+
+# Conceitos Fundamentais
+
+# O que é Estatística Descritiva?
+
+A Estatística Descritiva é a etapa responsável por resumir e organizar os dados.
+
+Ela NÃO testa hipóteses.
+
+Ela serve para:
+
+- entender o comportamento da amostra;
+- visualizar padrões;
+- identificar possíveis outliers;
+- observar dispersão;
+- analisar tendência central.
+
+Exemplos utilizados no trabalho:
+
+- média;
+- mediana;
+- desvio padrão;
+- histogramas;
+- boxplots;
+- tabelas resumo.
+
+---
+
+# Média
+
+## O que é?
+
+A média é uma medida de tendência central.
+
+Representa o “centro” dos dados.
+
+## Fórmula
+
+$$
+\bar{x} = \frac{\sum x_i}{n}
+$$
+
+---
+
+## Interpretação
+
+### Média alta
+
+Pode indicar:
+
+- maiores valores de IMC;
+- maior concentração dos dados em regiões superiores.
+
+### Média baixa
+
+Pode indicar:
+
+- menores valores médios;
+- distribuição deslocada para baixo.
+
+---
+
+## Cuidados
+
+A média é sensível a outliers.
+
+Exemplo:
+
+Uma pessoa com IMC extremamente alto pode puxar a média para cima.
+
+Por isso:
+
+- média sozinha não basta;
+- é importante analisar mediana e dispersão.
+
+---
+
+# Mediana
+
+## O que é?
+
+Valor central da distribuição.
+
+Divide os dados ao meio.
+
+---
+
+## Interpretação
+
+### Média próxima da mediana
+
+Sugere distribuição mais simétrica.
+
+### Média muito diferente da mediana
+
+Pode indicar:
+
+- assimetria;
+- presença de outliers;
+- distribuição não normal.
+
+---
+
+# Desvio Padrão
+
+## O que é?
+
+Mede a dispersão dos dados.
+
+Indica o quanto os valores variam em torno da média.
+
+---
+
+## Fórmula
+
+$$
+s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}
+$$
+
+---
+
+## Interpretação
+
+### Desvio padrão pequeno
+
+Dados mais concentrados.
+
+Menor variabilidade.
+
+### Desvio padrão grande
+
+Dados mais espalhados.
+
+Maior variabilidade.
+
+---
+
+# Homogeneidade vs Associação
+
+# Dados homogêneos NÃO significam associação
+
+Esse é um ponto MUITO importante.
+
+---
+
+## Homogeneidade
+
+Relaciona-se à variabilidade.
+
+Quando grupos possuem dispersões parecidas.
+
+Exemplo:
+
+- variâncias semelhantes;
+- comportamento semelhante das dispersões.
+
+---
+
+## Associação
+
+Relaciona-se à dependência estatística.
+
+Exemplo:
+
+- COVID associado ao delivery;
+- peso associado ao IMC.
+
+---
+
+## Resumo
+
+Homogeneidade:
+- compara dispersões.
+
+Associação:
+- compara relação entre variáveis.
+
+São conceitos completamente diferentes.
+
+---
+
+# Homocedasticidade
+
+# O que é Homocedasticidade?
+
+Homocedasticidade significa:
+
+igualdade das variâncias entre grupos.
+
+---
+
+## Exemplo
+
+Comparar IMC entre grupos de atividade física.
+
+Se todos os grupos tiverem variâncias parecidas:
+
+há homocedasticidade.
+
+---
+
+# O que é Heterocedasticidade?
+
+Heterocedasticidade significa:
+
+variâncias diferentes entre os grupos.
+
+---
+
+## Interpretação prática
+
+Se um grupo apresenta:
+
+- IMCs muito concentrados;
+
+e outro:
+
+- IMCs muito espalhados;
+
+então há heterocedasticidade.
+
+---
+
+# Consequências da Heterocedasticidade
+
+A ANOVA clássica assume:
+
+$$
+\sigma_1^2 = \sigma_2^2 = \cdots = \sigma_k^2
+$$
+
+Se isso não ocorre:
+
+- resultados podem ficar enviesados;
+- o teste clássico pode não ser adequado.
+
+Por isso foi usada:
+
+- ANOVA de Welch.
+
+---
+
+# p-valor
+
+# O que é p-valor?
+
+O p-valor mede:
+
+o quão compatíveis os dados observados são com a hipótese nula.
+
+---
+
+# Interpretação do p-valor
+
+## Quando:
+
+$$
+p < \alpha
+$$
+
+Rejeitamos:
+
+$$
+H_0
+$$
+
+Ou seja:
+
+há evidências estatísticas contra a hipótese nula.
+
+---
+
+## Quando:
+
+$$
+p > \alpha
+$$
+
+NÃO rejeitamos:
+
+$$
+H_0
+$$
+
+Importante:
+
+isso NÃO prova que \(H_0\) é verdadeira.
+
+Apenas significa:
+
+não houve evidência suficiente para rejeitá-la.
+
+---
+
+# Nível de significância
+
+## O que é \(\alpha\)?
+
+É o nível de significância.
+
+Representa o risco tolerado de erro tipo I.
+
+Normalmente:
+
+$$
+\alpha = 0.05
+$$
+
+---
+
+# Erro Tipo I
+
+## O que é?
+
+Rejeitar \(H_0\) quando ela é verdadeira.
+
+Falso positivo.
+
+---
+
+# Teste de Shapiro-Wilk
+
+# O que ele faz?
+
+Verifica normalidade.
+
+---
+
+## Hipóteses
+
+$$
+H_0: \text{os dados seguem distribuição normal}
+$$
+
+$$
+H_1: \text{os dados não seguem distribuição normal}
+$$
+
+---
+
+# Interpretação
+
+## Quando:
+
+$$
+p < 0.05
+$$
+
+Conclusão:
+
+- rejeita normalidade;
+- indícios de distribuição não normal.
+
+---
+
+## Quando:
+
+$$
+p > 0.05
+$$
+
+Conclusão:
+
+- não há evidência contra normalidade.
+
+---
+
+# Importância da Normalidade
+
+Muitos métodos paramétricos assumem:
+
+- distribuição aproximadamente normal.
+
+Exemplos:
+
+- ANOVA clássica;
+- regressão linear;
+- testes t.
+
+---
+
+# Teste de Levene
+
+# O que ele faz?
+
+Verifica igualdade das variâncias.
+
+---
+
+## Hipóteses
+
+$$
+H_0:\sigma_1^2=\sigma_2^2=\cdots=\sigma_k^2
+$$
+
+$$
+H_1:\text{pelo menos uma variância difere}
+$$
+
+---
+
+# Interpretação
+
+## Quando:
+
+$$
+p < 0.05
+$$
+
+Conclusão:
+
+- há heterocedasticidade;
+- variâncias diferentes.
+
+---
+
+## Quando:
+
+$$
+p > 0.05
+$$
+
+Conclusão:
+
+- não há evidências de heterocedasticidade.
+
+---
+
+# ANOVA
+
+# O que a ANOVA faz?
+
+Compara médias entre grupos.
+
+---
+
+## Objetivo
+
+Verificar se:
+
+pelo menos uma média difere das outras.
+
+---
+
+# Hipóteses
+
+$$
+H_0:\mu_1=\mu_2=\cdots=\mu_k
+$$
+
+$$
+H_1:\text{pelo menos uma média difere}
+$$
+
+---
+
+# Interpretação
+
+## Quando:
+
+$$
+p < 0.05
+$$
+
+Conclusão:
+
+- existem diferenças estatísticas entre grupos.
+
+---
+
+## Quando:
+
+$$
+p > 0.05
+$$
+
+Conclusão:
+
+- não há evidência suficiente de diferença.
+
+---
+
+# ANOVA de Welch
+
+# Por que usar Welch?
+
+A ANOVA clássica exige:
+
+- homocedasticidade.
+
+Como o teste de Levene pode indicar heterocedasticidade:
+
+utiliza-se Welch.
+
+---
+
+## Vantagem
+
+Welch é mais robusta quando:
+
+- variâncias são diferentes.
+
+---
+
+# Qui-Quadrado
+
+# O que ele faz?
+
+Verifica associação entre variáveis categóricas.
+
+---
+
+## Exemplo do trabalho
+
+COVID vs Delivery.
+
+---
+
+# Hipóteses
+
+$$
+H_0:\text{as variáveis são independentes}
+$$
+
+$$
+H_1:\text{há associação}
+$$
+
+---
+
+# Interpretação
+
+## Quando:
+
+$$
+p < 0.05
+$$
+
+Conclusão:
+
+- existe associação estatística.
+
+---
+
+## Quando:
+
+$$
+p > 0.05
+$$
+
+Conclusão:
+
+- não há evidência de associação.
+
+---
+
+# Correlação de Pearson
+
+# O que ela mede?
+
+Mede associação linear entre variáveis quantitativas.
+
+---
+
+## Coeficiente
+
+$$
+-1 \leq \rho \leq 1
+$$
+
+---
+
+# Interpretação
+
+## Próximo de +1
+
+Forte associação positiva.
+
+Exemplo:
+
+peso aumenta e IMC aumenta.
+
+---
+
+## Próximo de -1
+
+Forte associação negativa.
+
+Exemplo:
+
+uma variável sobe e outra desce.
+
+---
+
+## Próximo de 0
+
+Baixa associação linear.
+
+---
+
+# Correlação NÃO implica causalidade
+
+Esse é um dos pontos mais importantes.
+
+Correlação NÃO prova causa e efeito.
+
+---
+
+## Exemplo
+
+Duas variáveis podem:
+
+- crescer juntas;
+- mas serem influenciadas por outro fator.
+
+---
+
+# Boxplot
+
+# O que ele mostra?
+
+- mediana;
+- dispersão;
+- quartis;
+- possíveis outliers.
+
+---
+
+# Interpretação
+
+## Caixa muito alta
+
+Maior dispersão.
+
+## Caixa pequena
+
+Menor dispersão.
+
+## Pontos isolados
+
+Possíveis outliers.
+
+---
+
+# Histograma
+
+# O que ele mostra?
+
+Distribuição da variável.
+
+---
+
+# Interpretação
+
+## Simétrico
+
+Indício de normalidade.
+
+## Assimétrico
+
+Indício de não normalidade.
+
+## Caudas longas
+
+Possíveis outliers.
+
+---
+
+# Outliers
+
+# O que são?
+
+Valores muito distantes dos demais.
+
+---
+
+# Possíveis causas
+
+- erro de coleta;
+- erro de digitação;
+- comportamento raro real.
+
+---
+
+# Importância
+
+Outliers podem:
+
+- distorcer médias;
+- afetar modelos;
+- alterar testes estatísticos.
+
+---
+
+# Interpretação Geral do Trabalho
+
+# O que o trabalho mostrou?
+
+A análise indicou:
+
+- mudanças comportamentais durante a pandemia;
+- relação entre atividade física e IMC;
+- associação entre COVID e delivery;
+- forte relação entre peso e IMC.
+
+---
+
+# Limitações
+
+## Dados autorreportados
+
+As pessoas podem:
+
+- errar informações;
+- omitir dados;
+- estimar incorretamente.
+
+---
+
+## Ausência longitudinal
+
+Os dados representam:
+
+um recorte no tempo.
+
+Não acompanham evolução individual.
+
+---
+
+# Perguntas que podem surgir
+
+# “Por que usar Shapiro?”
+
+Para avaliar normalidade.
+
+---
+
+# “Por que usar Levene?”
+
+Para verificar igualdade das variâncias.
+
+---
+
+# “Por que Welch?”
+
+Porque Welch é robusta à heterocedasticidade.
+
+---
+
+# “Correlação implica causalidade?”
+
+Não.
+
+---
+
+# “O que significa rejeitar \(H_0\)?”
+
+Significa:
+
+os dados observados são improváveis sob a hipótese nula.
+
+---
+
+# “O que significa não rejeitar \(H_0\)?”
+
+Não significa provar que ela é verdadeira.
+
+Apenas:
+
+não houve evidência suficiente contra ela.
+
+---
+
+# Encerramento
+
+O trabalho combinou:
+
+- estatística descritiva;
+- testes inferenciais;
+- análise gráfica;
+- interpretação estatística.
+
+O foco principal não é apenas calcular resultados, mas:
+
+entender o comportamento dos dados e interpretar corretamente as conclusões estatísticas.
